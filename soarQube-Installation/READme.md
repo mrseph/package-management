@@ -20,6 +20,7 @@
 
 sudo useradd sonar
 # Grand sudo access to sonar user
+sudo useradd sonar
 sudo echo "sonar ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/sonar
 sudo hostname sonar
 sudo passwd sonar
