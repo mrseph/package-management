@@ -26,7 +26,7 @@ sudo hostname sonar
 sudo passwd sonar
 sudo su - sonar
 ```
-## 2. Enable PasswordAuthentication in the server
+## 2. Enable PasswordAuthentication in the server (so you can connect to the server using password or .pem key)
 ```sh
 sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]no/c\PasswordAuthentication yes" /etc/ssh/sshd_config
 sudo service sshd restart
